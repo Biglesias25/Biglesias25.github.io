@@ -2,54 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Landing Page</title>
+    <title>Your Awesome Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMtdXcoLJoVVDkFQ/UF3eFE5av2/vLZk5e8K/g" crossorigin="anonymous">
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav>
-        <div class="container">
-            <a href="#" class="logo">My Website</a>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="final-project.html">Final Project</a></li>
-            </ul>
-        </div>
+    <nav class="navbar">
+        <div class="navbar-brand">YourBrand</div>
+        <ul class="navbar-nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
 
-    <!-- Title Banner -->
-    <header>
-        <div class="header-content">
-            <h1>Welcome to My Website</h1>
-            <p>Discover my projects, my journey, and what drives me to create and innovate.</p>
-            <a href="about.html" class="btn">Learn More About Me</a>
+    <!-- Hero Section -->
+    <header class="hero-section" id="home">
+        <div class="hero-content">
+            <h1>Welcome to My Stunning Website</h1>
+            <p>Discover the world of creativity and innovation.</p>
+            <a href="#projects" class="btn">Explore My Work</a>
         </div>
     </header>
 
-    <!-- Body with Links to Minor Projects -->
-    <main class="container">
-        <h2>Minor Projects</h2>
-        <ul class="project-list">
-            <li><a href="#">Principles, Practices, Project Management (Web Design)</a></li>
-            <li><a href="#">Computer Aided Design</a></li>
-            <li><a href="#">Computer Controlled Cutting</a></li>
-            <!-- Add other project links here -->
-        </ul>
+    <!-- About Me Section -->
+    <section class="about-section" id="about">
+        <h2>About Me</h2>
+        <p>A brief description about yourself, your interests, and your passions.</p>
+    </section>
 
-        <!-- Final Project Link -->
-        <div class="final-project-link">
-            <a href="final-project.html" class="btn">Go to Final Project Page</a>
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+        <h2>My Projects</h2>
+        <div class="card-grid">
+            <!-- Project Card -->
+            <div class="card">
+                <img src="project-image.jpg" alt="Project Image">
+                <div class="card-content">
+                    <h3>Project Title</h3>
+                    <p>Short description of the project.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+            <!-- Add more cards as needed -->
         </div>
-    </main>
+    </section>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 My Website. All rights reserved.</p>
+    <footer class="footer">
+        <p>&copy; 2024 YourName. All rights reserved.</p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

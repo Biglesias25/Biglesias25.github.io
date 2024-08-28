@@ -1,176 +1,216 @@
-/* Reset some default styles */
+/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #f5f5f5;
     color: #333;
+    line-height: 1.6;
 }
 
-/* Container for central alignment */
-.container {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-/* Navigation Bar Styles */
-nav {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-}
-
-nav .container {
+/* Navbar */
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem 2rem;
+    background-color: #222;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
-nav ul {
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav {
     list-style: none;
     display: flex;
-    margin: 0;
+    gap: 1.5rem;
 }
 
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    color: white;
+.navbar-nav a {
     text-decoration: none;
-    padding: 5px 10px;
-    transition: background-color 0.3s ease;
+    color: #fff;
+    transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-    background-color: #555;
+.navbar-nav a:hover {
+    color: #ff6347;
 }
 
-.logo {
-    font-size: 1.5em;
+/* Hero Section */
+.hero-section {
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 2rem;
+    position: relative;
+    margin-top: 60px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 2s ease-out;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    animation: fadeIn 3s ease-out;
+}
+
+.btn {
+    padding: 0.8rem 1.5rem;
+    background-color: #ff6347;
     color: #fff;
     text-decoration: none;
-}
-
-/* Header Styles */
-header {
-    background: url('../assets/images/banner.jpg') no-repeat center center/cover;
-    color: white;
-    padding: 100px 0;
-    text-align: center;
-}
-
-.header-content {
-    max-width: 600px;
-    margin: auto;
-}
-
-h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
-}
-
-p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-
-/* Button Styles */
-.btn {
-    background-color: #007BFF;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
     border-radius: 5px;
-    display: inline-block;
     transition: background-color 0.3s ease;
-    margin-top: 20px;
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    background-color: #ff4500;
 }
 
-/* Main Content Styles */
-main {
-    padding: 40px 0;
+/* About Me Section */
+.about-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #fff;
+    margin-top: 2rem;
+}
+
+.about-section p {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Final Project Section */
+.final-project-section {
+    padding: 4rem 2rem;
+    background-color: #e0e0e0;
     text-align: center;
 }
 
-h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-.project-list {
+.final-project-section ul {
     list-style-type: none;
     padding: 0;
-    text-align: left;
-    margin: 20px 0;
 }
 
-.project-list li {
-    padding: 10px 0;
-    font-size: 1.1em;
+.final-project-section ul li {
+    margin: 1rem 0;
 }
 
-/* Footer Styles */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 20px;
-    position: relative;
+.final-project-section ul li a {
+    color: #ff6347;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.final-project-section ul li a:hover {
+    color: #ff4500;
+}
+
+/* Projects Section */
+.projects-section {
+    background-color: #e0e0e0;
+    padding: 4rem 2rem;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
     width: 100%;
+    height: auto;
 }
 
-/* Responsive Styles */
+.card-content {
+    padding: 1rem;
+}
+
+/* Error Page */
+.error-page {
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.error-page h1 {
+    font-size: 6rem;
+    color: #ff6347;
+    margin-bottom: 1rem;
+}
+
+.error-page h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.error-page p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-    nav .container {
-        flex-direction: column;
+    .hero-content h1 {
+        font-size: 2.5rem;
     }
 
-    nav ul {
-        flex-direction: column;
-        text-align: center;
+    .hero-content p {
+        font-size: 1.2rem;
     }
 
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    header {
-        padding: 60px 0;
-    }
-
-    .header-content h1 {
-        font-size: 2.5em;
-    }
-
-    .btn {
-        margin-top: 15px;
-    }
-}
-
-@media (max-width: 480px) {
-    header {
-        padding: 40px 0;
-    }
-
-    .header-content h1 {
-        font-size: 2em;
-    }
-
-    .container {
-        width: 90%;
+    .navbar-nav {
+        gap: 1rem;
     }
 }
