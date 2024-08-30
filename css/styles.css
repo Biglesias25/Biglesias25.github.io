@@ -5,10 +5,12 @@ body {
     line-height: 1.6;
 }
 
+/* Navigation bar styles */
 nav ul {
     background-color: #333;
     padding: 0;
-    list-style: none;
+    list-style-type: none; /* Removes bullets */
+    margin: 0;
     display: flex;
     justify-content: center;
 }
@@ -24,16 +26,19 @@ nav ul li a {
     display: block;
 }
 
+/* Header styles */
 header {
     text-align: center;
     padding: 50px 0;
 }
 
+/* Main content styles */
 main {
     padding: 20px;
     text-align: center;
 }
 
+/* Button styles */
 button {
     padding: 10px 20px;
     margin-top: 20px;
