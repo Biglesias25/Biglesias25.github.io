@@ -33,3 +33,13 @@ main {
     padding: 20px;
     text-align: center;
 }
+
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
