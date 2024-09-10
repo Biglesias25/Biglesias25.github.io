@@ -2,22 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Not Found</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script>
-        // Automatically redirect to the home page after 5 seconds
-        setTimeout(function() {
-            window.location.href = 'index.html'; // Redirect to the home page
-        }, 5000);
-    </script>
+    <link rel="stylesheet" href="styles.css">
+    <title>404 - Page Not Found</title>
 </head>
 <body>
-    <main>
-        <h1>404 Error: Page Not Found</h1>
-        <p>Sorry, the page you are looking for is under construction.</p>
-        <p>You will be redirected to the <a href="index.html">home page</a> in 5 seconds.</p>
-        <button onclick="window.location.href='index.html'">Go to Home Page</button>
-    </main>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="final-project.html">Final Project</a></li>
+    </ul>
+</nav>
+
+<header>
+    <h1>404 - Page Not Found</h1>
+</header>
+
+<section class="main-content">
+    <p>Oops! The page you are looking for does not exist. Please check the URL or go back to the <a href="index.html">Home</a> page.</p>
+</section>
+
+<footer>
+    <p>&copy; 2024 My Project Portfolio</p>
+</footer>
+
 </body>
 </html>
