@@ -10,7 +10,7 @@ body {
 nav ul {
     background-color: #333;
     padding: 0;
-    list-style-type: none; /* Removes bullets */
+    list-style-type: none;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -39,21 +39,26 @@ main {
     text-align: center;
 }
 
-/* Styling for the project links to appear as boxes */
-main ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Creates a responsive grid */
-    gap: 20px; /* Space between boxes */
-    padding: 0;
-    list-style: none; /* Removes bullets */
+/* Project Components Section Styling */
+.project-components {
+    margin-top: 30px;
 }
 
-main ul li {
+/* Styling for the component boxes */
+.project-components ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.project-components ul li {
     list-style: none;
 }
 
-/* Box styling */
-main ul li a {
+/* Box styling for each component */
+.component-box {
     display: block;
     padding: 20px;
     background-color: #f0f0f0;
@@ -61,18 +66,18 @@ main ul li a {
     border-radius: 8px;
     text-decoration: none;
     color: #333;
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover transition */
+    transition: transform 0.3s, box-shadow 0.3s;
     text-align: center;
 }
 
-/* Hover effect */
-main ul li a:hover {
-    transform: translateY(-5px); /* Moves the box up slightly */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow on hover */
-    background-color: #e0e0e0; /* Slightly changes background color on hover */
+/* Hover effect for component boxes */
+.component-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #e0e0e0;
 }
 
-/* Button styling */
+/* GLOBAL Button styling for all pages */
 button {
     padding: 10px 20px;
     margin-top: 20px;
@@ -81,4 +86,48 @@ button {
     color: white;
     border: none;
     border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* GLOBAL Button hover effect */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* SPECIFIC STYLING FOR PROBLEM VALIDATION PAGE ONLY */
+.problem-validation-page table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.problem-validation-page table, .problem-validation-page th, .problem-validation-page td {
+    border: 1px solid #ddd;
+}
+
+.problem-validation-page th, .problem-validation-page td {
+    padding: 12px;
+    text-align: left;
+}
+
+.problem-validation-page th {
+    background-color: #f2f2f2;
+}
+
+.problem-validation-page td {
+    background-color: #fff;
+}
+
+.problem-validation-page tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Button styling specific to Problem Validation Page */
+.problem-validation-page button {
+    margin-top: 10px;
+}
+
+/* Specific Button hover effect for Problem Validation Page */
+.problem-validation-page button:hover {
+    background-color: #0056b3;
 }
