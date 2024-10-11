@@ -12,6 +12,32 @@
             margin: 20px;
             line-height: 1.6;
         }
+        nav {
+            background-color: #333;
+            padding: 10px 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        nav ul li {
+            float: left;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
         h1, h2 {
             color: #2c3e50;
             text-align: center;
@@ -54,16 +80,28 @@
             background-color: #2c3e50;
             color: #fff;
             border-radius: 8px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
 
+    <!-- Consistent Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#3D">3D Prototype</a></li>
+            <li><a href="#2D">2D Logo</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
     <div class="container">
         <h1>Project Documentation: Custom Mobility Vehicle for Children with Disabilities</h1>
 
         <!-- 3D CAD Prototype Section -->
-        <div class="section">
+        <div class="section" id="3D">
             <h2>3D CAD Prototype</h2>
             <p>
                 This section documents the 3D CAD prototype of the custom vehicle. Using Fusion 360, we built a simplified version of the vehicle, focusing on core features such as size, wheels, and suspension. Screenshots of each stage of development are shown below.
@@ -73,15 +111,23 @@
         </div>
 
         <!-- 2D CAD Logo Section -->
-        <div class="section">
+        <div class="section" id="2D">
             <h2>2D CAD Logo Design</h2>
             <p>
-                Using Affinity Design, we created the logo for the project. The logo aims to reflect both the inclusivity of our custom mobility solutions and the playful, child-centric design. Below are two iterations of the logo:
+                This logo features a mobility vehicle designed for children with severe disabilities. I started by inputting the prompt "design a logo for a project focused on creating custom mobility vehicles for individuals with severe disabilities, specifically those with Coffin-Lowry Syndrome" into ChatGPT. The system generated a wheelchair symbol combined with a heart to symbolize mobility and care. After that, I asked it to refine the logo by adding playful elements, like bright colors and round shapes, to make it child-friendly. Once the initial draft was generated, I further customized it by enhancing the color scheme to evoke a sense of inclusivity and joy. This process ensured that the logos would be both visually appealing and easy to reproduce.
             </p>
             <div class="image-container">
-                <img src="logo1.jpg">
-                <img src="logo2.jpg">
+                <img src="/mnt/data/DALL·E 2024-10-10 12.49.45 - Design a logo for a project focused on creating custom mobility vehicles for individuals with severe disabilities, specifically those with Coffin-Lowr.webp" alt="Logo 1 - Mobility vehicles for disabilities">
+                <img src="/mnt/data/DALL·E 2024-10-10 12.49.36 - Design a logo for a project focused on creating custom ride-on vehicles for children with severe disabilities, inspired by kids' toy cars. The logo sh.webp" alt="Logo 2 - Ride-on vehicles for children with disabilities">
             </div>
+        </div>
+
+        <!-- About Section -->
+        <div class="section" id="about">
+            <h2>About the Project</h2>
+            <p>
+                This project aims to design custom mobility solutions for children with severe disabilities, particularly those with Coffin-Lowry Syndrome. By integrating playful and functional elements, we hope to create vehicles that provide both practical support and an engaging, enjoyable experience for children in need.
+            </p>
         </div>
     </div>
 
