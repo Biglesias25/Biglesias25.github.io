@@ -131,3 +131,12 @@ button:hover {
 .problem-validation-page button:hover {
     background-color: #0056b3;
 }
+
+iframe {
+    display:flex;
+    margin-right:auto;
+    margin-left:auto;
+    width:55%;
+    height:750px;
+    
+}
